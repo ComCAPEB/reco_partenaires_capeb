@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Recos partenaires — CAPEB de l'Aube</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:system-ui,sans-serif;font-size:14px;color:#1a1a1a;background:#fff;padding:1.5rem;max-width:720px;margin:0 auto}
+h1{font-size:18px;font-weight:600;margin-bottom:1.5rem;color:#1a1a1a}
+h2{font-size:14px;font-weight:600;margin-bottom:.75rem;color:#1a1a1a}
+.sec{margin-bottom:1.25rem}
+label{display:block;font-size:12px;color:#666;margin-bottom:3px}
+input,textarea,select{width:100%;font-size:13px;color:#1a1a1a;background:#fff;border:1px solid #d0d0d0;border-radius:6px;padding:7px 9px;font-family:inherit}
+input:focus,textarea:focus,select:focus{outline:none;border-color:#888}
+textarea{resize:vertical}
+.r2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.r3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px}
+.pzone{background:#f7f7f5;border-radius:8px;padding:1rem;margin-bottom:1.5rem;border:1px solid #e8e8e8}
+.pzone-top{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;margin-top:8px}
+.pbtn{padding:6px 14px;font-size:12px;font-family:inherit;border:1px solid #ccc;border-radius:6px;background:#fff;color:#1a1a1a;cursor:pointer}
+.pbtn:hover{background:#f0f0f0}
+.clearbtn{padding:6px 14px;font-size:12px;font-family:inherit;border:1px solid #f5c6c6;border-radius:6px;background:#fff;color:#c0392b;cursor:pointer}
+.clearbtn:hover{background:#fdf0f0}
+.pst{font-size:11px;margin-top:5px;color:#666}
+.warn{color:#b45309;font-size:11px;margin-top:3px}
+.div{border:none;border-top:1px solid #e8e8e8;margin:1.5rem 0}
+.pgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:7px;margin-top:4px}
+.pt{padding:7px 10px;font-size:12px;font-family:inherit;border:1px solid #d0d0d0;border-radius:6px;background:#fff;color:#1a1a1a;cursor:pointer;text-align:left;width:100%;line-height:1.3}
+.pt:hover{background:#f5f5f5}
+.pt.on{background:#dbeafe;border-color:#93c5fd;color:#1e40af}
+.ig{grid-column:1/-1;border:1px solid #e8e8e8;border-radius:6px;padding:8px 10px}
+.il{font-size:11px;color:#888;margin-bottom:6px}
+.ib{display:flex;gap:8px;flex-wrap:wrap}
+.ib .pt{width:auto}
+.autres-zone{grid-column:1/-1;margin-top:4px}
+.autre-row{display:grid;grid-template-columns:1fr 1fr 1fr auto;gap:8px;align-items:end;margin-bottom:8px;padding:10px;background:#f7f7f5;border:1px solid #e8e8e8;border-radius:6px}
+.autre-row label{font-size:11px}
+.autre-del{padding:6px 10px;font-size:13px;font-family:inherit;border:1px solid #f5c6c6;border-radius:6px;background:#fff;color:#c0392b;cursor:pointer;white-space:nowrap}
+.autre-del:hover{background:#fdf0f0}
+.add-autre-btn{margin-top:4px;padding:6px 12px;font-size:12px;font-family:inherit;border:1px dashed #ccc;border-radius:6px;background:#fff;color:#666;cursor:pointer}
+.add-autre-btn:hover{background:#f5f5f5;border-color:#999}
+.btns{display:flex;gap:10px;margin-top:.5rem}
+.gbtn{flex:1;padding:10px;font-size:14px;font-weight:600;font-family:inherit;border:1px solid #ccc;border-radius:6px;background:#f0f0f0;color:#1a1a1a;cursor:pointer}
+.gbtn:hover{background:#e4e4e4}
+.rbtn{padding:10px 16px;font-size:13px;font-family:inherit;border:1px solid #ccc;border-radius:6px;background:#fff;color:#888;cursor:pointer;white-space:nowrap}
+.rbtn:hover{background:#fdf0f0;color:#c0392b;border-color:#f5c6c6}
+.out{margin-top:1.5rem}
+.ob{padding:1rem;background:#fff;border:1px solid #e0e0e0;border-radius:8px;margin-bottom:1rem}
+.ec{padding:1rem;background:#f7f7f5;border-radius:6px;border-left:2px solid #93c5fd;font-size:12px;line-height:1.65;color:#1a1a1a;margin-bottom:.5rem}
+.ec p{margin-bottom:.5rem}
+.ec ul{margin:.4rem 0 .5rem 1.2rem}
+.ec li{margin-bottom:2px}
+.cb{font-size:11px;padding:4px 10px;border:1px solid #ccc;border-radius:5px;background:#fff;color:#555;cursor:pointer;font-family:inherit}
+.cb:hover{background:#f0f0f0}
+.tab{width:100%;border-collapse:collapse;font-size:12px;margin-top:.5rem}
+.tab th{text-align:left;padding:6px 8px;color:#666;border-bottom:1px solid #e0e0e0;font-weight:600}
+.tab td{padding:6px 8px;border-bottom:1px solid #e8e8e8;color:#1a1a1a}
+.sp{display:inline-block;width:13px;height:13px;border:2px solid #ccc;border-top-color:#666;border-radius:50%;animation:spin .7s linear infinite;vertical-align:middle;margin-right:6px}
+@keyframes spin{to{transform:rotate(360deg)}}
+.sm{font-size:12px;color:#666;margin-top:.75rem}
+.tr{display:flex;align-items:center;gap:8px}
+.tl{font-size:13px;color:#444}
+</style>
+</head>
+<body>
+<h1>Rédaction de recommandations partenaires</h1>
+
+<div class="pzone">
+  <label>Coller la fiche adhérent (extraction automatique)</label>
+  <textarea id="fraw" placeholder="Colle ici le texte copié depuis ta base de données..." style="min-height:80px"></textarea>
+  <div class="pzone-top">
+    <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap">
+      <button class="pbtn" id="pbtn">Extraire les informations</button>
+      <span class="pst" id="pst"></span>
+    </div>
+    <button class="clearbtn" id="clearbtn">Vider tous les champs</button>
+  </div>
+</div>
+
+<hr class="div">
+
+<div class="sec">
+  <label>Contexte / demande</label>
+  <textarea id="ctx" placeholder="Ex : M. Lefebvre souhaite faire floquer son véhicule." style="min-height:55px"></textarea>
+</div>
+
+<div class="sec r2">
+  <div><label>Raison sociale</label><input id="rs" type="text"/></div>
+  <div><label>Représentant</label><input id="rp" type="text"/></div>
+</div>
+
+<div class="sec r3">
+  <div><label>Activité</label><input id="ac" type="text"/></div>
+  <div><label>Mobile</label><input id="mo" type="text"/></div>
+  <div>
+    <label>Email</label>
+    <input id="em" type="text"/>
+    <div id="ew" class="warn" style="display:none">⚠ Adresse signalée invalide dans la fiche</div>
+  </div>
+</div>
+
+<div class="sec"><label>Adresse</label><input id="ad" type="text"/></div>
+
+<div class="sec tr">
+  <input type="checkbox" id="adh" checked style="width:auto">
+  <span class="tl">Adhérent CAPEB</span>
+</div>
+
+<div class="sec">
+  <h2>Partenaires</h2>
+  <div class="pgrid" id="pgrid">
+    <button class="pt" data-id="decograv" data-name="Décograv" data-tu="1" data-dest="Sébastien">Décograv<br><span style="font-size:11px;color:#888">Sébastien</span></button>
+    <button class="pt" data-id="virgule" data-name="Virgule" data-tu="0" data-dest="" data-sp="virgule">Virgule<br><span style="font-size:11px;color:#888">Élodie / Louise</span></button>
+    <button class="pt" data-id="groupama" data-name="Groupama" data-tu="0" data-dest="" data-sp="groupama">Groupama</button>
+    <button class="pt" data-id="mma" data-name="MMA" data-tu="0" data-dest="Frédéric Fantin">MMA<br><span style="font-size:11px;color:#888">Frédéric Fantin</span></button>
+    <button class="pt" data-id="adn" data-name="ADN Systèmes" data-tu="1" data-dest="Yannick">ADN Systèmes<br><span style="font-size:11px;color:#888">Yannick</span></button>
+    <button class="pt" data-id="swisslife" data-name="Swisslife" data-tu="1" data-dest="Emmanuel">Swisslife<br><span style="font-size:11px;color:#888">Emmanuel</span></button>
+    <button class="pt" data-id="monceau" data-name="Monceau" data-tu="1" data-dest="Alexandra">Monceau<br><span style="font-size:11px;color:#888">Alexandra</span></button>
+    <button class="pt" data-id="citroen" data-name="Citroën" data-tu="0" data-dest="Florent">Citroën<br><span style="font-size:11px;color:#888">Florent</span></button>
+    <div class="ig">
+      <div class="il">Intérim — sélectionner un ou les deux (mail commun si les deux)</div>
+      <div class="ib">
+        <button class="pt" data-id="amplitude" data-name="Amplitude TT" data-tu="0" data-dest="" data-sp="interim">Amplitude TT</button>
+        <button class="pt" data-id="partnaire" data-name="Partnaire" data-tu="0" data-dest="" data-sp="interim">Partnaire</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="autres-zone" id="autres-zone"></div>
+  <button class="add-autre-btn" id="add-autre-btn">+ Ajouter un partenaire hors liste</button>
+</div>
+
+<div class="btns">
+  <button class="gbtn" id="gbtn">Générer les emails ↗</button>
+  <button class="rbtn" id="rbtn">↺ Nouveau</button>
+</div>
+
+<div class="out" id="out" style="display:none">
+  <div class="ob" id="eout"></div>
+  <div class="ob" id="tout"></div>
+</div>
+<div id="sm" class="sm"></div>
+
+<script>
+function fmtPhone(p){if(!p)return'';const d=p.replace(/\D/g,'');if(d.length===10)return d.match(/.{2}/g).join(' ');return p}
+function ttc(s){return s.toLowerCase().replace(/\b\w/g,c=>c.toUpperCase())}
+
+// Mots-clés qui indiquent qu'une ligne est un libellé de champ, pas une vraie valeur (utile pour l'adresse)
+const LABELS_FIELD = /^(Code entreprise|Forme juridique|Raison sociale|Dénomination|Statut chef d'entreprise|Salarié|Non Salarié|Adresse|NPAI|Oui|Non|Téléphone|Téléphone domicile|Mobile|Fax|Mail|Mail 2|Web|Adresse facebook|Transmission des données|Visible sur site|Syndicat|Code syndicat|Code activité|Inscrit|Profession principale|CAPEB|France|Bloqué depuis|Motif|Résolution|Date du dernier déblocage)$/i;
+
+function parseFiche(text){
+  const r={raison:'',rep:'',activite:'',mobile:'',email:'',adresse:'',adherent:true,emailBloque:false};
+  const L=text.split('\n').map(l=>l.trim()).filter(Boolean);
+
+  for(let i=0;i<L.length;i++){
+    const l=L[i],n=L[i+1]||'',n2=L[i+2]||'';
+
+    // Raison sociale
+    if(/Raison sociale/i.test(l)&&/^(EIRL|SASU|SELARL|SCOP|SCI|SARL|SAS|EURL|EARL|SNC|SA|EI)\s/i.test(n))r.raison=n.trim();
+    if(!r.raison&&/^(EIRL|SASU|SELARL|SCOP|SCI|SARL|SAS|EURL|EARL|SNC|SA|EI)\s/i.test(l))r.raison=l.trim();
+
+    // Représentant : ligne juste après "Dénomination", quel que soit le format exact
+    if(/Dénomination/i.test(l)&&n&&!LABELS_FIELD.test(n)){
+      // On accepte toute ligne qui n'est pas elle-même un libellé de champ
+      r.rep=ttc(n.trim());
+    }
+
+    // Mobile
+    if(/^Mobile$/i.test(l)){const m=n.match(/0[0-9]{9}/);if(m)r.mobile=fmtPhone(m[0])}
+
+    // Email
+    if(/^Mail$/i.test(l)&&n.includes('@')){r.email=n.trim();if(/[Bb]loqu|invalide/i.test([n2,L[i+3]||'',L[i+4]||''].join(' ')))r.emailBloque=true}
+
+    // Profession
+    if(/Profession principale/i.test(l)&&n&&!LABELS_FIELD.test(n))r.activite=ttc(n.trim());
+
+    // Adhérent / non adhérent
+    if(/Code syndicat/i.test(l)){const b=l+' '+n;if(/Non adhérent|N\s*-/i.test(b))r.adherent=false;else if(/Adhérent|A\s*-/i.test(b))r.adherent=true}
+  }
+
+  // --- Adresse : recherche robuste ---
+  // Stratégie : on cherche la ligne "Adresse" (label), puis on prend toutes les lignes suivantes
+  // jusqu'à tomber sur un autre libellé de champ connu (NPAI, Téléphone, etc.) ou sur "France".
+  let adresseIdx=-1;
+  for(let i=0;i<L.length;i++){
+    if(/^Adresse$/i.test(L[i])){adresseIdx=i;break}
+  }
+  if(adresseIdx>=0){
+    const morceaux=[];
+    for(let i=adresseIdx+1;i<L.length;i++){
+      const l=L[i];
+      if(/^France$/i.test(l))break; // on arrête juste avant "France"
+      if(LABELS_FIELD.test(l))break; // on tombe sur un nouveau champ
+      morceaux.push(l);
+      if(morceaux.length>=4)break; // sécurité anti-débordement
+    }
+    if(morceaux.length){
+      // Si la dernière ligne contient un code postal, on la sépare proprement
+      r.adresse=morceaux.map(m=>{
+        const cp=m.match(/^(\d{5})\s+(.+)$/);
+        return cp?`${cp[1]} ${ttc(cp[2].trim())}`:ttc(m.trim());
+      }).join(' – ');
+    }
+  }
+  // Fallback : si rien trouvé via le label "Adresse", on cherche directement un code postal
+  if(!r.adresse){
+    for(let i=0;i<L.length;i++){
+      const cp=L[i].match(/^(\d{5})\s+(.+)$/);
+      if(cp){
+        const rue=L[i-1]||'';
+        if(rue && !LABELS_FIELD.test(rue)){
+          r.adresse=`${ttc(rue.trim())} – ${cp[1]} ${ttc(cp[2].trim())}`;
+          break;
+        }
+      }
+    }
+  }
+
+  return r;
+}
+
+function clearAllFields(){
+  ['fraw','ctx','rs','rp','ac','mo','em','ad'].forEach(id=>document.getElementById(id).value='');
+  document.getElementById('adh').checked=true;
+  document.getElementById('ew').style.display='none';
+  document.getElementById('pst').textContent='';
+  document.querySelectorAll('.pt.on').forEach(b=>b.classList.remove('on'));
+  sel=[];
+  document.getElementById('autres-zone').innerHTML='';
+  autreCount=0;
+  document.getElementById('out').style.display='none';
+  document.getElementById('sm').textContent='';
+}
+
+document.getElementById('clearbtn').addEventListener('click',clearAllFields);
+document.getElementById('rbtn').addEventListener('click',clearAllFields);
+
+document.getElementById('pbtn').addEventListener('click',()=>{
+  const raw=document.getElementById('fraw').value;
+  if(!raw.trim())return;
+
+  // On vide d'abord les champs (sauf la fiche collée) pour éviter de garder une ancienne reco
+  ['ctx','rs','rp','ac','mo','em','ad'].forEach(id=>document.getElementById(id).value='');
+  document.getElementById('adh').checked=true;
+  document.getElementById('ew').style.display='none';
+  document.querySelectorAll('.pt.on').forEach(b=>b.classList.remove('on'));
+  sel=[];
+  document.getElementById('autres-zone').innerHTML='';
+  autreCount=0;
+  document.getElementById('out').style.display='none';
+
+  const r=parseFiche(raw);
+  if(r.raison)document.getElementById('rs').value=r.raison;
+  if(r.rep)document.getElementById('rp').value=r.rep;
+  if(r.activite)document.getElementById('ac').value=r.activite;
+  if(r.mobile)document.getElementById('mo').value=r.mobile;
+  if(r.email)document.getElementById('em').value=r.email;
+  if(r.adresse)document.getElementById('ad').value=r.adresse;
+  document.getElementById('adh').checked=r.adherent;
+  document.getElementById('ew').style.display=r.emailBloque?'block':'none';
+  const f=[r.raison,r.rep,r.activite,r.mobile,r.email,r.adresse].filter(Boolean).length;
+  document.getElementById('pst').textContent=f+'/6 champs extraits'+(r.emailBloque?' — email bloqué détecté':'')+(r.adherent?'':' — non adhérent détecté')+(!r.adresse?' — adresse non détectée, à vérifier manuellement':'');
+});
+
+// --- Partenaires "Autre" dynamiques ---
+let autreCount=0;
+function addAutreRow(){
+  autreCount++;
+  const id='autre-'+autreCount;
+  const zone=document.getElementById('autres-zone');
+  const row=document.createElement('div');
+  row.className='autre-row';
+  row.id='row-'+id;
+  row.innerHTML=`
+    <div><label>Nom partenaire</label><input type="text" id="an-${id}" placeholder="Ex : Société ABC"/></div>
+    <div><label>Destinataire</label><input type="text" id="ade-${id}" placeholder="Ex : Laurent"/></div>
+    <div><label>Tutoiement ?</label><select id="atu-${id}"><option value="0">Vouvoiement</option><option value="1">Tutoiement</option></select></div>
+    <button class="autre-del" onclick="removeAutreRow('${id}')">✕</button>
+  `;
+  zone.appendChild(row);
+}
+function removeAutreRow(id){const row=document.getElementById('row-'+id);if(row)row.remove()}
+document.getElementById('add-autre-btn').addEventListener('click',addAutreRow);
+
+function getAutresPartners(){
+  const rows=document.querySelectorAll('[id^="row-autre-"]');
+  const result=[];
+  rows.forEach(row=>{
+    const id=row.id.replace('row-','');
+    const name=document.getElementById('an-'+id)?.value.trim()||'';
+    const dest=document.getElementById('ade-'+id)?.value.trim()||'';
+    const tu=document.getElementById('atu-'+id)?.value==='1';
+    if(name) result.push({id,name,dest,tu,sp:''});
+  });
+  return result;
+}
+
+// --- Partenaires liste fixe ---
+let sel=[];
+document.getElementById('pgrid').addEventListener('click',function(e){
+  const btn=e.target.closest('.pt');if(!btn)return;
+  const id=btn.dataset.id;
+  if(btn.classList.contains('on')){btn.classList.remove('on');sel=sel.filter(p=>p.id!==id)}
+  else{btn.classList.add('on');sel.push({id,name:btn.dataset.name,tu:btn.dataset.tu==='1',dest:btn.dataset.dest||'',sp:btn.dataset.sp||''})}
+});
+
+function buildPartners(){
+  let p=sel.map(x=>({...x}));
+  const amp=p.find(x=>x.id==='amplitude'),par=p.find(x=>x.id==='partnaire');
+  if(amp&&par){p=p.filter(x=>x.id!=='amplitude'&&x.id!=='partnaire');p.push({id:'interim_both',name:'Amplitude TT et Partnaire',tu:false,dest:'',sp:'interim_both'})}
+  return [...p,...getAutresPartners()];
+}
+
+// --- Copier ---
+async function copyText(text,btn){
+  try{await navigator.clipboard.writeText(text)}
+  catch{
+    const ta=document.createElement('textarea');
+    ta.value=text;ta.style.position='fixed';ta.style.opacity='0';
+    document.body.appendChild(ta);ta.focus();ta.select();
+    document.execCommand('copy');document.body.removeChild(ta);
+  }
+  btn.textContent='Copié !';
+  setTimeout(()=>btn.textContent='Copier',1500);
+}
+
+// --- Génération ---
+document.getElementById('gbtn').addEventListener('click',async()=>{
+  const ctx=document.getElementById('ctx').value.trim();
+  const rs=document.getElementById('rs').value.trim();
+  const rp=document.getElementById('rp').value.trim();
+  const ac=document.getElementById('ac').value.trim();
+  const mo=document.getElementById('mo').value.trim();
+  const em=document.getElementById('em').value.trim();
+  const ad=document.getElementById('ad').value.trim();
+  const adh=document.getElementById('adh').checked;
+  const blq=document.getElementById('ew').style.display!=='none';
+  const partners=buildPartners();
+  const sm=document.getElementById('sm');
+  if(!ctx||!rs||!rp||partners.length===0){sm.textContent='Merci de renseigner le contexte, la raison sociale, le représentant et au moins un partenaire.';return}
+  sm.innerHTML='<span class="sp"></span>Rédaction en cours…';
+  document.getElementById('out').style.display='none';
+
+  const coord=`- Entreprise : ${rs}\n- Représentant : ${rp}\n- Activité : ${ac}\n- Adresse : ${ad}\n- Mobile : ${mo}\n- Email : ${em}${blq?' (adresse à confirmer)':''}`;
+  const naNote=adh?'':'\nMerci de bien vouloir lui transmettre les tarifs adhérents et non adhérents afin de lui permettre de comparer et éventuellement envisager une adhésion.';
+
+  const pdesc=partners.map(p=>{
+    let salut='';
+    if(p.sp==='virgule'||p.sp==='groupama') salut='Bonjour à toutes les deux,';
+    else if(p.sp==='interim_both') salut='Bonjour,';
+    else if(p.dest) salut=`Bonjour ${p.dest},`;
+    else salut='Bonjour,';
+    return `Partenaire: ${p.name} | Salutation à utiliser dans le mail: "${salut}" | Tutoiement: ${p.tu?'oui':'non'}${p.sp==='interim_both'?' (mail commun aux deux agences)':''}`;
+  }).join('\n');
+
+  const sys=`Tu es un assistant de rédaction pour Roxane, coordinatrice à la CAPEB de l'Aube. Tu rédiges des emails de recommandation partenaires en son nom, signés "Roxane".
+RÈGLES STRICTES :
+- Signature : "Roxane" seul, jamais de titre ni organisation
+- Ne jamais écrire "est prêt à être mis en relation avec vous/toi"
+- Humaniser l'intro : mentionner le nom et l'activité (ex : "M. Blanchet, maçon à La Chapelle-Saint-Luc, souhaite…")
+- Varier légèrement l'intro d'un mail à l'autre pour ne pas copier-coller
+- Coordonnées : liste à puces HTML (<ul><li>). Chaque label en <strong> (ex : <strong>Entreprise :</strong> SAS L PEINTURE). Jamais de markdown **
+- TUTOIEMENT/VOUVOIEMENT : appliquer STRICTEMENT selon la consigne. Si vouvoiement, tout le mail doit vouvoyer, y compris la phrase de conclusion.
+- Phrase de conclusion : varier la formulation d'un mail à l'autre. Exemples possibles selon tutoiement :
+  Tutoiement : "Je te laisse prendre contact avec lui/elle.", "N'hésite pas à le/la contacter directement.", "Je te laisse revenir vers lui/elle."
+  Vouvoiement : "Je vous laisse prendre contact avec lui/elle.", "Je vous laisse revenir directement vers lui/elle.", "N'hésitez pas à le/la contacter directement."
+- Virgule et Groupama : salutation toujours "Bonjour à toutes les deux,"
+- Non adhérent : phrase naturelle sur les tarifs adhérents/non adhérents
+- Objet court et clair
+- Le champ "corps" doit être du HTML valide (balises <p>, <ul>, <li>, <strong>) — jamais de markdown
+- Tableau colonne "entreprise" : format exact "RAISON SOCIALE [Prénom NOM]" ex: "SAS L PEINTURE [Pierre Lefebvre]"
+- Tableau colonne "objet" : uniquement le besoin factuel court (ex : "Logiciel devis / facture", "Flocage véhicule", "Assurance décennale") — jamais de nom, jamais de description
+- Répondre UNIQUEMENT en JSON valide, sans texte avant ni après, sans markdown ni backticks :
+{"emails":[{"partner":"...","objet":"...","corps":"..."}],"tableau":[{"entreprise":"...","partenaire":"...","objet":"..."}]}`;
+
+  const usr=`Demande : ${ctx}\n\nCoordonnées :\n${coord}\nAdhérent : ${adh?'oui':'non'}${naNote}\n\nPartenaires (respecter exactement la salutation et le tutoiement indiqués) :\n${pdesc}\n\nUn email par partenaire. Tableau de suivi inclus.`;
+
+  try{
+    const res=await fetch('https://api.anthropic.com/v1/messages',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({model:'claude-sonnet-4-20250514',max_tokens:2500,system:sys,messages:[{role:'user',content:usr}]})});
+    const data=await res.json();
+    const raw=data.content?.find(b=>b.type==='text')?.text||'';
+    const clean=raw.replace(/```json|```/g,'').trim();
+    const jsonMatch=clean.match(/\{[\s\S]*\}/);
+    if(!jsonMatch)throw new Error('Réponse invalide de l\'API');
+    const parsed=JSON.parse(jsonMatch[0]);
+
+    const eo=document.getElementById('eout');
+    eo.innerHTML='<h2 style="margin-bottom:.75rem">Emails générés</h2>';
+    parsed.emails.forEach(e=>{
+      const c=document.createElement('div');c.className='ec';
+      c.innerHTML=`<p style="font-size:11px;color:#666;margin-bottom:.6rem"><strong>Objet :</strong> ${e.objet}</p>${e.corps}`;
+      const cb=document.createElement('button');cb.className='cb';cb.textContent='Copier';
+      const tmp=document.createElement('div');tmp.innerHTML=e.corps;
+      const txtBrut=`Objet : ${e.objet}\n\n${tmp.innerText.trim()}`;
+      cb.addEventListener('click',()=>copyText(txtBrut,cb));
+      eo.appendChild(c);eo.appendChild(cb);
+    });
+
+    const to=document.getElementById('tout');
+    to.innerHTML='<h2 style="margin-bottom:.75rem">Tableau de suivi</h2>';
+    const tbl=document.createElement('table');tbl.className='tab';
+    tbl.innerHTML='<thead><tr><th>Entreprise</th><th>Partenaire</th><th>Objet / Besoin</th></tr></thead>';
+    const tb=document.createElement('tbody');
+    parsed.tableau.forEach(row=>{const tr=document.createElement('tr');tr.innerHTML=`<td>${row.entreprise}</td><td>${row.partenaire}</td><td>${row.objet}</td>`;tb.appendChild(tr)});
+    tbl.appendChild(tb);to.appendChild(tbl);
+
+    document.getElementById('out').style.display='block';sm.innerHTML='';
+  }catch(err){sm.textContent='Erreur : '+err.message}
+});
+</script>
+</body>
+</html>
